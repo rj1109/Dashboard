@@ -1,0 +1,88 @@
+#root {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Container for the entire page */
+.csv-reader-container {
+  padding: 5px; /* Add padding around the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for the chart and table side by side */
+.data-pie-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Full width */
+  margin-top: 20px;
+}
+
+/* Container for the table (Excel Data) */
+.table-container {
+  width: 40%; /* Excel data takes up 40% of the screen width */
+  padding-right: 20px; /* Space between the table and pie chart */
+  overflow-x: auto;
+}
+
+/* Container for the pie chart */
+.pie-chart-container {
+  width: 60%; /* Pie chart takes up 60% of the screen width */
+  padding-left: 20px; /* Space between the table and pie chart */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #312d2d;
+}
